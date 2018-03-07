@@ -31,7 +31,7 @@ bot.on("message", (message) => {
             var substring = str.substring(22)
             if (!substring.length == 0) {
                 //clever.ask(substring).then(res => message.reply(res.response.toString()));
-                clever.ask(substring).then(res => message.guild.channels.find('id','418561008593010688').send(`${message.member} ` + res.response.toString()));
+                clever.ask(substring).then(res => message.guild.channels.find('id',config.botchannel).send(`${message.member} ` + res.response.toString()));
             }
         }
     }
