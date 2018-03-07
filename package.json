@@ -1,0 +1,18 @@
+{
+  "name": "blue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cleverbot.io": "^1.0.4",
+    "cleverbot.js": "^1.0.0",
+    "cleverio": "^5.0.0",
+    "discord.js": "^11.3.2",
+    "discord.js-commando": "^0.9.0"
+  }
+}
