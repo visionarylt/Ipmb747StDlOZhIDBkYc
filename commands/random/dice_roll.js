@@ -1,4 +1,5 @@
 const commando = require('discord.js-commando');
+const config = require("./config.json");
 
 class DiceRollCommand extends commando.Command {
     constructor(client) {
@@ -13,7 +14,7 @@ class DiceRollCommand extends commando.Command {
 
     async run(message, args) {
         var roll = Math.floor(Math.random() * 6) + 1;
-        message.guild.channels.find('id','418561008593010688').send(`${message.member} ` + "you rolled a " + roll + ".");
+        message.guild.channels.find('id',config.botchannel).send(`${message.member} ` + "you rolled a " + roll + ".");
     }
 }
 

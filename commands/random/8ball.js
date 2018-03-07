@@ -1,4 +1,5 @@
 const commando = require('discord.js-commando');
+const config = require("./config.json");
 
 class EightBallCommand extends commando.Command {
     constructor(client) {
@@ -37,7 +38,7 @@ class EightBallCommand extends commando.Command {
                 'very doubtful.'
             ]
             var answer = answers[Math.floor(Math.random() * answers.length)];
-            message.guild.channels.find('id','418561008593010688').send(`${message.member} ` + answer.toString());
+            message.guild.channels.find('id',config.botchannel).send(`${message.member} ` + answer.toString());
         }
     }
 }
